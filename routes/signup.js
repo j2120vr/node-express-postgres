@@ -40,6 +40,7 @@ router.post('/', function (req, res, next) {
           });
       } else {
         res.render("signup", {
+          isAuth: isAuth,
           title: "Sign up",
           errorMessage: ["パスワードが一致しません"],
         });
