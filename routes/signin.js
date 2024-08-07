@@ -36,6 +36,7 @@ router.post('/', function (req, res, next) {
     .catch(function (err) {
       console.error(err);
       res.render("signin", {
+        isAuth: isAuth,
         title: "Sign in",
         errorMessage: [err.sqlMessage],
       });

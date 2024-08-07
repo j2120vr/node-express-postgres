@@ -1,0 +1,13 @@
+<!-- views/tasks.ejs -->
+<ul>
+    <% tasks.forEach(task => { %>
+      <li>
+        <h3><%= task.title %></h3>
+        <p><%= task.description %></p>
+        <p>Category: <%= task.category %></p>
+        <p>Priority: <%= task.priority %></p>
+        <p>Due Date: <%= task.due_date %></p>
+      </li>
+    <% }) %>
+</ul>
+  
